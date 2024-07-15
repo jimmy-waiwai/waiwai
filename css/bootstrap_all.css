@@ -1,0 +1,2215 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* index_all.html 上からcss抜き出してみる */
+
+/* class="navbar" ここから */
+  .navbar {
+    display: none;
+  }
+
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    border-radius: 4px;
+  }
+}
+
+/* class="navbar" ここまで */
+
+/* class="navbar-default" ここから */
+
+.navbar-default {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+}
+
+/* class="navbar-default" ここまで */
+
+/* class="navbar-fixed-top" ここから */
+
+.navbar-fixed-top .navbar-collapse,
+.navbar-fixed-bottom .navbar-collapse {
+  max-height: 340px;
+}
+@media (max-device-width: 480px) and (orientation: landscape) {
+  .navbar-fixed-top .navbar-collapse,
+  .navbar-fixed-bottom .navbar-collapse {
+    max-height: 200px;
+  }
+}
+
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+@media (min-width: 768px) {
+  .navbar-fixed-top,
+  .navbar-fixed-bottom {
+    border-radius: 0;
+  }
+}
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+}
+
+/* class="navbar-fixed-top" ここまで */
+
+/* class="navbar-fixed-bottom" ここから */
+
+.dropup .caret,
+.navbar-fixed-bottom .dropdown .caret {
+  content: "";
+  border-top: 0;
+  border-bottom: 4px dashed;
+  border-bottom: 4px solid \9;
+}
+.dropup .dropdown-menu,
+.navbar-fixed-bottom .dropdown .dropdown-menu {
+  top: auto;
+  bottom: 100%;
+  margin-bottom: 2px;
+}
+
+.navbar-fixed-top .navbar-collapse,
+.navbar-fixed-bottom .navbar-collapse {
+  max-height: 340px;
+}
+@media (max-device-width: 480px) and (orientation: landscape) {
+  .navbar-fixed-top .navbar-collapse,
+  .navbar-fixed-bottom .navbar-collapse {
+    max-height: 200px;
+  }
+}
+
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+@media (min-width: 768px) {
+  .navbar-fixed-top,
+  .navbar-fixed-bottom {
+    border-radius: 0;
+  }
+}
+
+.navbar-fixed-bottom {
+  bottom: 0;
+  margin-bottom: 0;
+  border-width: 1px 0 0;
+}
+
+/* class="navbar-fixed-bottom" ここまで */
+
+/* class="navbar-inverse" ここから */
+
+.navbar-inverse {
+  background-color: #222;
+  border-color: #080808;
+}
+
+/* class="navbar-inverse" ここまで */
+
+/* class="container" ここから */
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* class="container" ここまで */
+
+/* class="container-fluid" ここから */
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* class="container-fluid" ここまで */
+
+/* class="carousel-indicators" ここから */
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none;
+}
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #000 \9;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+.carousel-indicators .active {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  background-color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .carousel-indicators {
+    bottom: 20px;
+  }
+}
+
+/* class="carousel-indicators" ここまで */
+
+/* class="carousel-inner" ここから */
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.carousel-inner > .item {
+  position: relative;
+  display: none;
+  -webkit-transition: .6s ease-in-out left;
+       -o-transition: .6s ease-in-out left;
+          transition: .6s ease-in-out left;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  line-height: 1;
+}
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .carousel-inner > .item {
+    -webkit-transition: -webkit-transform .6s ease-in-out;
+         -o-transition:      -o-transform .6s ease-in-out;
+            transition:         transform .6s ease-in-out;
+
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
+  }
+  .carousel-inner > .item.next,
+  .carousel-inner > .item.active.right {
+    left: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+  .carousel-inner > .item.prev,
+  .carousel-inner > .item.active.left {
+    left: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+  }
+  .carousel-inner > .item.next.left,
+  .carousel-inner > .item.prev.right,
+  .carousel-inner > .item.active {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+.carousel-inner > .active,
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  display: block;
+}
+.carousel-inner > .active {
+  left: 0;
+}
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.carousel-inner > .next {
+  left: 100%;
+}
+.carousel-inner > .prev {
+  left: -100%;
+}
+.carousel-inner > .next.left,
+.carousel-inner > .prev.right {
+  left: 0;
+}
+.carousel-inner > .active.left {
+  left: -100%;
+}
+.carousel-inner > .active.right {
+  left: 100%;
+}
+
+/* class="carousel-inner" ここまで */
+
+/* class="center-block" ここから */
+
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* class="center-block" ここまで */
+
+/* class="carousel-caption" ここから */
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+.carousel-caption .btn {
+  text-shadow: none;
+}
+
+@media screen and (min-width: 768px) {
+  .carousel-caption {
+    right: 20%;
+    left: 20%;
+    padding-bottom: 30px;
+  }
+}
+
+/* class="carousel-caption" ここまで */
+
+/* class="carousel-control" ここから */
+
+.carousel-control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15%;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  background-color: rgba(0, 0, 0, 0);
+  filter: alpha(opacity=50);
+  opacity: .5;
+}
+.carousel-control.left {
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
+  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
+  background-image:         linear-gradient(to right, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+  background-repeat: repeat-x;
+}
+.carousel-control.right {
+  right: 0;
+  left: auto;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
+  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
+  background-image:         linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+  background-repeat: repeat-x;
+}
+.carousel-control:hover,
+.carousel-control:focus {
+  color: #fff;
+  text-decoration: none;
+  filter: alpha(opacity=90);
+  outline: 0;
+  opacity: .9;
+}
+.carousel-control .icon-prev,
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+  margin-top: -10px;
+}
+.carousel-control .icon-prev,
+.carousel-control .glyphicon-chevron-left {
+  left: 50%;
+  margin-left: -10px;
+}
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-right {
+  right: 50%;
+  margin-right: -10px;
+}
+.carousel-control .icon-prev,
+.carousel-control .icon-next {
+  width: 20px;
+  height: 20px;
+  font-family: serif;
+  line-height: 1;
+}
+.carousel-control .icon-prev:before {
+  content: '\2039';
+}
+.carousel-control .icon-next:before {
+  content: '\203a';
+}
+
+@media screen and (min-width: 768px) {
+  .carousel-control .glyphicon-chevron-left,
+  .carousel-control .glyphicon-chevron-right,
+  .carousel-control .icon-prev,
+  .carousel-control .icon-next {
+    width: 30px;
+    height: 30px;
+    margin-top: -10px;
+    font-size: 30px;
+  }
+  .carousel-control .glyphicon-chevron-left,
+  .carousel-control .icon-prev {
+    margin-left: -10px;
+  }
+  .carousel-control .glyphicon-chevron-right,
+  .carousel-control .icon-next {
+    margin-right: -10px;
+  }
+}
+
+/* class="carousel-control" ここまで */
+
+/* class="glyphicon" ここから */
+
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* class="glyphicon" ここまで */
+
+/* class="glyphicon-chevron-left" ここから */
+
+.glyphicon-chevron-left:before {
+  content: "\e079";
+}
+.carousel-control .glyphicon-chevron-left {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+  margin-top: -10px;
+}
+
+.carousel-control .glyphicon-chevron-left {
+  left: 50%;
+  margin-left: -10px;
+}
+
+@media screen and (min-width: 768px) {
+  .carousel-control .glyphicon-chevron-left {
+    width: 30px;
+    height: 30px;
+    margin-top: -10px;
+    font-size: 30px;
+  }
+  .carousel-control .glyphicon-chevron-left {
+    margin-left: -10px;
+  }
+
+}
+
+/* class="glyphicon-chevron-left" ここまで */
+
+/* class="sr-only" ここから */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+
+/* class="sr-only" ここまで */
+
+/* class="glyphicon-chevron-right" ここから */
+
+.glyphicon-chevron-right:before {
+  content: "\e080";
+}
+
+.carousel-control .glyphicon-chevron-right {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+  margin-top: -10px;
+}
+
+.carousel-control .glyphicon-chevron-right {
+  right: 50%;
+  margin-right: -10px;
+}
+
+@media screen and (min-width: 768px) {
+  .carousel-control .glyphicon-chevron-right {
+    width: 30px;
+    height: 30px;
+    margin-top: -10px;
+    font-size: 30px;
+  }
+
+  .carousel-control .glyphicon-chevron-right {
+    margin-right: -10px;
+  }
+}
+
+/* class="glyphicon-chevron-right" ここまで */
+
+/* class="img-responsive" ここから */
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* class="img-responsive" ここまで */
+
+/* class="img-circle" ここから */
+
+.img-circle {
+  border-radius: 50%;
+}
+
+/* class="img-circle" ここまで */
+
+/* class="img-rounded" ここから */
+
+.img-rounded {
+  border-radius: 6px;
+}
+
+/* class="img-rounded" ここまで */
+
+/* class="img-thumbnail" ここから */
+
+.img-thumbnail {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out;
+       -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
+
+/* class="img-thumbnail" ここまで */
+
+/* class="thumbnail" ここから */
+
+.thumbnail > img,
+.thumbnail a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.thumbnail {
+  display: block;
+  padding: 4px;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: border .2s ease-in-out;
+       -o-transition: border .2s ease-in-out;
+          transition: border .2s ease-in-out;
+}
+.thumbnail > img,
+.thumbnail a > img {
+  margin-right: auto;
+  margin-left: auto;
+}
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active {
+  border-color: #337ab7;
+}
+
+/* class="thumbnail" ここまで */
+
+/* class="caption" ここから */
+
+.thumbnail .caption {
+  padding: 9px;
+  color: #333;
+}
+
+/* class="caption" ここまで */
+
+/* class="btn" ここから */
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn:hover,
+.btn:focus,
+.btn.focus {
+  color: #333;
+  text-decoration: none;
+}
+.btn:active,
+.btn.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+.btn-lg,
+.btn-group-lg > .btn {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+.btn-sm,
+.btn-group-sm > .btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.btn-xs,
+.btn-group-xs > .btn {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+
+/* class="btn" ここまで */
+
+/* class="btn-default" ここから */
+
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+.btn-default:focus,
+.btn-default.focus {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #8c8c8c;
+}
+.btn-default:hover {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.btn-default:active:hover,
+.btn-default.active:hover,
+.open > .dropdown-toggle.btn-default:hover,
+.btn-default:active:focus,
+.btn-default.active:focus,
+.open > .dropdown-toggle.btn-default:focus,
+.btn-default:active.focus,
+.btn-default.active.focus,
+.open > .dropdown-toggle.btn-default.focus {
+  color: #333;
+  background-color: #d4d4d4;
+  border-color: #8c8c8c;
+}
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  background-image: none;
+}
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,
+.btn-default.disabled.focus,
+.btn-default[disabled].focus,
+fieldset[disabled] .btn-default.focus {
+  background-color: #fff;
+  border-color: #ccc;
+}
+.btn-default .badge {
+  color: #fff;
+  background-color: #333;
+}
+
+/* class="btn-default" ここまで */
+
+/* class="btn-primary" ここから */
+
+.btn-primary {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+.btn-primary:focus,
+.btn-primary.focus {
+  color: #fff;
+  background-color: #286090;
+  border-color: #122b40;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus {
+  color: #fff;
+  background-color: #204d74;
+  border-color: #122b40;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus {
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+.btn-primary .badge {
+  color: #337ab7;
+  background-color: #fff;
+}
+
+/* class="btn-primary" ここまで */
+
+/* class="btn-info" ここから */
+
+.btn-info {
+  color: #fff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+.btn-info:focus,
+.btn-info.focus {
+  color: #fff;
+  background-color: #31b0d5;
+  border-color: #1b6d85;
+}
+.btn-info:hover {
+  color: #fff;
+  background-color: #31b0d5;
+  border-color: #269abc;
+}
+.btn-info:active,
+.btn-info.active,
+.open > .dropdown-toggle.btn-info {
+  color: #fff;
+  background-color: #31b0d5;
+  border-color: #269abc;
+}
+.btn-info:active:hover,
+.btn-info.active:hover,
+.open > .dropdown-toggle.btn-info:hover,
+.btn-info:active:focus,
+.btn-info.active:focus,
+.open > .dropdown-toggle.btn-info:focus,
+.btn-info:active.focus,
+.btn-info.active.focus,
+.open > .dropdown-toggle.btn-info.focus {
+  color: #fff;
+  background-color: #269abc;
+  border-color: #1b6d85;
+}
+.btn-info:active,
+.btn-info.active,
+.open > .dropdown-toggle.btn-info {
+  background-image: none;
+}
+.btn-info.disabled:hover,
+.btn-info[disabled]:hover,
+fieldset[disabled] .btn-info:hover,
+.btn-info.disabled:focus,
+.btn-info[disabled]:focus,
+fieldset[disabled] .btn-info:focus,
+.btn-info.disabled.focus,
+.btn-info[disabled].focus,
+fieldset[disabled] .btn-info.focus {
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+.btn-info .badge {
+  color: #5bc0de;
+  background-color: #fff;
+}
+
+/* class="btn-info" ここまで */
+
+/* class="btn-success" ここから */
+
+.btn-success {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+.btn-success:focus,
+.btn-success.focus {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #255625;
+}
+.btn-success:hover {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #398439;
+}
+.btn-success:active,
+.btn-success.active,
+.open > .dropdown-toggle.btn-success {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #398439;
+}
+.btn-success:active:hover,
+.btn-success.active:hover,
+.open > .dropdown-toggle.btn-success:hover,
+.btn-success:active:focus,
+.btn-success.active:focus,
+.open > .dropdown-toggle.btn-success:focus,
+.btn-success:active.focus,
+.btn-success.active.focus,
+.open > .dropdown-toggle.btn-success.focus {
+  color: #fff;
+  background-color: #398439;
+  border-color: #255625;
+}
+.btn-success:active,
+.btn-success.active,
+.open > .dropdown-toggle.btn-success {
+  background-image: none;
+}
+.btn-success.disabled:hover,
+.btn-success[disabled]:hover,
+fieldset[disabled] .btn-success:hover,
+.btn-success.disabled:focus,
+.btn-success[disabled]:focus,
+fieldset[disabled] .btn-success:focus,
+.btn-success.disabled.focus,
+.btn-success[disabled].focus,
+fieldset[disabled] .btn-success.focus {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+.btn-success .badge {
+  color: #5cb85c;
+  background-color: #fff;
+}
+
+/* class="btn-success" ここまで */
+
+/* class="btn-danger" ここから */
+
+.btn-danger {
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.btn-danger:focus,
+.btn-danger.focus {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #761c19;
+}
+.btn-danger:hover {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+.btn-danger:active,
+.btn-danger.active,
+.open > .dropdown-toggle.btn-danger {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+.btn-danger:active:hover,
+.btn-danger.active:hover,
+.open > .dropdown-toggle.btn-danger:hover,
+.btn-danger:active:focus,
+.btn-danger.active:focus,
+.open > .dropdown-toggle.btn-danger:focus,
+.btn-danger:active.focus,
+.btn-danger.active.focus,
+.open > .dropdown-toggle.btn-danger.focus {
+  color: #fff;
+  background-color: #ac2925;
+  border-color: #761c19;
+}
+.btn-danger:active,
+.btn-danger.active,
+.open > .dropdown-toggle.btn-danger {
+  background-image: none;
+}
+.btn-danger.disabled:hover,
+.btn-danger[disabled]:hover,
+fieldset[disabled] .btn-danger:hover,
+.btn-danger.disabled:focus,
+.btn-danger[disabled]:focus,
+fieldset[disabled] .btn-danger:focus,
+.btn-danger.disabled.focus,
+.btn-danger[disabled].focus,
+fieldset[disabled] .btn-danger.focus {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.btn-danger .badge {
+  color: #d9534f;
+  background-color: #fff;
+}
+
+/* class="btn-danger" ここまで */
+
+/* class="btn-warning" ここから */
+
+.btn-warning {
+  color: #fff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+.btn-warning:focus,
+.btn-warning.focus {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #985f0d;
+}
+.btn-warning:hover {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+.btn-warning:active,
+.btn-warning.active,
+.open > .dropdown-toggle.btn-warning {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+.btn-warning:active:hover,
+.btn-warning.active:hover,
+.open > .dropdown-toggle.btn-warning:hover,
+.btn-warning:active:focus,
+.btn-warning.active:focus,
+.open > .dropdown-toggle.btn-warning:focus,
+.btn-warning:active.focus,
+.btn-warning.active.focus,
+.open > .dropdown-toggle.btn-warning.focus {
+  color: #fff;
+  background-color: #d58512;
+  border-color: #985f0d;
+}
+.btn-warning:active,
+.btn-warning.active,
+.open > .dropdown-toggle.btn-warning {
+  background-image: none;
+}
+.btn-warning.disabled:hover,
+.btn-warning[disabled]:hover,
+fieldset[disabled] .btn-warning:hover,
+.btn-warning.disabled:focus,
+.btn-warning[disabled]:focus,
+fieldset[disabled] .btn-warning:focus,
+.btn-warning.disabled.focus,
+.btn-warning[disabled].focus,
+fieldset[disabled] .btn-warning.focus {
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+.btn-warning .badge {
+  color: #f0ad4e;
+  background-color: #fff;
+}
+
+/* class="btn-warning" ここまで */
+
+/* class="btn-group" ここから */
+
+.btn-group {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* class="btn-group" ここまで */
+
+/* class="btn-toolbar" ここから */
+
+.btn-toolbar {
+  margin-left: -5px;
+}
+.btn-toolbar .btn,
+.btn-toolbar .btn-group,
+.btn-toolbar .input-group {
+  float: left;
+}
+.btn-toolbar > .btn,
+.btn-toolbar > .btn-group,
+.btn-toolbar > .input-group {
+  margin-left: 5px;
+}
+
+/* class="btn-toolbar" ここまで */
+
+/* class="btn-group-vertical" ここから */
+
+.btn-group-vertical {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+.btn-group > .btn,
+.btn-group-vertical > .btn {
+  position: relative;
+  float: left;
+}
+.btn-group > .btn:hover,
+.btn-group-vertical > .btn:hover,
+.btn-group > .btn:focus,
+.btn-group-vertical > .btn:focus,
+.btn-group > .btn:active,
+.btn-group-vertical > .btn:active,
+.btn-group > .btn.active,
+.btn-group-vertical > .btn.active {
+  z-index: 2;
+}
+
+.btn-group-vertical > .btn,
+.btn-group-vertical > .btn-group,
+.btn-group-vertical > .btn-group > .btn {
+  display: block;
+  float: none;
+  width: 100%;
+  max-width: 100%;
+}
+.btn-group-vertical > .btn-group > .btn {
+  float: none;
+}
+.btn-group-vertical > .btn + .btn,
+.btn-group-vertical > .btn + .btn-group,
+.btn-group-vertical > .btn-group + .btn,
+.btn-group-vertical > .btn-group + .btn-group {
+  margin-top: -1px;
+  margin-left: 0;
+}
+.btn-group-vertical > .btn:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+.btn-group-vertical > .btn:first-child:not(:last-child) {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.btn-group-vertical > .btn:last-child:not(:first-child) {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn {
+  border-radius: 0;
+}
+.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child,
+.btn-group-vertical > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* class="btn-group-vertical" ここまで */
+
+/* class="dropdown-toggle" ここから */
+
+.open > .dropdown-toggle.btn-default {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+
+.open > .dropdown-toggle.btn-default:hover,
+.open > .dropdown-toggle.btn-default:focus,
+.open > .dropdown-toggle.btn-default.focus {
+  color: #333;
+  background-color: #d4d4d4;
+  border-color: #8c8c8c;
+}
+
+.open > .dropdown-toggle.btn-default {
+  background-image: none;
+}
+
+.dropdown-toggle:focus {
+  outline: 0;
+}
+
+.btn-group .dropdown-toggle:active,
+.btn-group.open .dropdown-toggle {
+  outline: 0;
+}
+.btn-group > .btn + .dropdown-toggle {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+.btn-group > .btn-lg + .dropdown-toggle {
+  padding-right: 12px;
+  padding-left: 12px;
+}
+.btn-group.open .dropdown-toggle {
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.btn-group.open .dropdown-toggle.btn-link {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/* class="dropdown-toggle" ここまで */
+
+/* class="caret" ここから */
+
+ .btn > .caret,
+  .dropup > .btn > .caret {
+    border-top-color: #000 !important;
+  }
+
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-top: 4px solid \9;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+.dropup .caret,
+.navbar-fixed-bottom .dropdown .caret {
+  content: "";
+  border-top: 0;
+  border-bottom: 4px dashed;
+  border-bottom: 4px solid \9;
+}
+
+.btn .caret {
+  margin-left: 0;
+}
+.btn-lg .caret {
+  border-width: 5px 5px 0;
+  border-bottom-width: 0;
+}
+.dropup .btn-lg .caret {
+  border-width: 0 5px 5px;
+}
+
+/* class="caret" ここまで */
+
+/* class="dropdown-menu" ここから */
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.dropdown-menu.pull-right {
+  right: 0;
+  left: auto;
+}
+.dropdown-menu .divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+.dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: #262626;
+  text-decoration: none;
+  background-color: #f5f5f5;
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #337ab7;
+  outline: 0;
+}
+.dropdown-menu > .disabled > a,
+.dropdown-menu > .disabled > a:hover,
+.dropdown-menu > .disabled > a:focus {
+  color: #777;
+}
+.dropdown-menu > .disabled > a:hover,
+.dropdown-menu > .disabled > a:focus {
+  text-decoration: none;
+  cursor: not-allowed;
+  background-color: transparent;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.open > .dropdown-menu {
+  display: block;
+}
+
+/* class="dropdown-menu" ここまで */
+
+/* class="btn-group-justified" ここから */
+
+.btn-group-justified {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: separate;
+}
+.btn-group-justified > .btn,
+.btn-group-justified > .btn-group {
+  display: table-cell;
+  float: none;
+  width: 1%;
+}
+.btn-group-justified > .btn-group .btn {
+  width: 100%;
+}
+.btn-group-justified > .btn-group .dropdown-menu {
+  left: auto;
+}
+
+/* class="btn-group-justified" ここまで */
+
+/* class="glyphicon" ここから */
+
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* class="glyphicon" ここまで */
+
+/* class="glyphicon-*" ここから */
+
+/* http://getbootstrap.com/components/ アクセス*/
+
+/* class="glyphicon-*" ここまで */
+
+/* class="media" ここから */
+
+.media {
+  margin-top: 15px;
+}
+.media:first-child {
+  margin-top: 0;
+}
+.media {
+  overflow: hidden;
+  zoom: 1;
+}
+
+/* class="media" ここまで */
+
+/* class="media-left" ここから */
+
+.media-left {
+  padding-right: 10px;
+}
+.media-left {
+  display: table-cell;
+  vertical-align: top;
+}
+
+/* class="media-left" ここまで */
+
+/* class="media-object" ここから */
+
+.media-object {
+  display: block;
+}
+.media-object.img-thumbnail {
+  max-width: none;
+}
+
+/* class="media-object" ここまで */
+
+/* class="media-body" ここから */
+
+.media-body {
+  overflow: hidden;
+  zoom: 1;
+}
+
+.media-body {
+  width: 10000px;
+}
+
+.media-body {
+  display: table-cell;
+  vertical-align: top;
+}
+
+/* class="media-body" ここまで */
+
+/* class="media-heading" ここから */
+
+.media-heading {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+/* class="media-heading" ここまで */
+
+/* class="media-right" ここから */
+
+.media-right {
+  padding-left: 10px;
+}
+
+.media-right {
+  display: table-cell;
+  vertical-align: top;
+}
+
+/* class="media-right" ここまで */
+
+/* class="media-list" ここから */
+
+.media-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+/* class="media-list" ここまで */
+
+/* class="embed-responsive" ここから */
+
+.embed-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.embed-responsive-16by9 {
+  padding-bottom: 56.25%;
+}
+.embed-responsive-4by3 {
+  padding-bottom: 75%;
+}
+
+/* class="embed-responsive" ここまで */
+
+/* class="jumbotron" ここから */
+
+.jumbotron {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #eee;
+}
+.jumbotron h1,
+.jumbotron .h1 {
+  color: inherit;
+}
+.jumbotron p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+.jumbotron > hr {
+  border-top-color: #d5d5d5;
+}
+.container .jumbotron,
+.container-fluid .jumbotron {
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 6px;
+}
+.jumbotron .container {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .jumbotron {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .container .jumbotron,
+  .container-fluid .jumbotron {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .jumbotron h1,
+  .jumbotron .h1 {
+    font-size: 63px;
+  }
+}
+
+/* class="jumbotron" ここまで */
+
+/* class="input-group" ここから */
+
+.input-group {
+  position: relative;
+  display: table;
+  border-collapse: separate;
+}
+.input-group[class*="col-"] {
+  float: none;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* class="input-group" ここまで */
+
+/* class="input-group-addon" ここから */
+
+.input-group-addon {
+  display: table-cell;
+}
+.input-group-addon:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+.input-group-addon {
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.input-group-addon {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1;
+  color: #555;
+  text-align: center;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* class="input-group-addon" ここまで */
+
+/* class="form-control" ここから */
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+.form-control::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  color: #999;
+}
+.form-control::-webkit-input-placeholder {
+  color: #999;
+}
+.form-control::-ms-expand {
+  background-color: transparent;
+  border: 0;
+}
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+  background-color: #eee;
+  opacity: 1;
+}
+.form-control[disabled],
+fieldset[disabled] .form-control {
+  cursor: not-allowed;
+}
+
+.input-group .form-control {
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 100%;
+  margin-bottom: 0;
+}
+.input-group .form-control:focus {
+  z-index: 3;
+}
+
+.input-group .form-control {
+  display: table-cell;
+}
+
+.input-group .form-control:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[type="date"].form-control,
+  input[type="time"].form-control,
+  input[type="datetime-local"].form-control,
+  input[type="month"].form-control {
+    line-height: 34px;
+  }
+}
+
+/* class="form-control" ここまで */
+
+/* class="list-group" ここから */
+
+.list-group {
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+/* class="list-group" ここまで */
+
+/* class="panel-default" ここから */
+
+.panel-default {
+  border-color: #ddd;
+}
+.panel-default > .panel-heading {
+  color: #333;
+  background-color: #f5f5f5;
+  border-color: #ddd;
+}
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #ddd;
+}
+.panel-default > .panel-heading .badge {
+  color: #f5f5f5;
+  background-color: #333;
+}
+.panel-default > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #ddd;
+}
+
+/* class="panel-default" ここまで */
+
+/* class="well" ここから */
+
+.well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+.well blockquote {
+  border-color: #ddd;
+  border-color: rgba(0, 0, 0, .15);
+}
+.well-lg {
+  padding: 24px;
+  border-radius: 6px;
+}
+.well-sm {
+  padding: 9px;
+  border-radius: 3px;
+}
+
+/* class="well" ここまで */
+
+/* class="nav" ここから */
+
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.nav > li {
+  position: relative;
+  display: block;
+}
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: #eee;
+}
+.nav > li.disabled > a {
+  color: #777;
+}
+.nav > li.disabled > a:hover,
+.nav > li.disabled > a:focus {
+  color: #777;
+  text-decoration: none;
+  cursor: not-allowed;
+  background-color: transparent;
+}
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  background-color: #eee;
+  border-color: #337ab7;
+}
+.nav .nav-divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+.nav > li > a > img {
+  max-width: none;
+}
+
+/* class="nav" ここまで */
+
+/* class="nav-tabs" ここから */
+
+.nav-tabs {
+  border-bottom: 1px solid #ddd;
+}
+.nav-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+}
+.nav-tabs > li > a {
+  margin-right: 2px;
+  line-height: 1.42857143;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+}
+.nav-tabs > li > a:hover {
+  border-color: #eee #eee #ddd;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #555;
+  cursor: default;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+}
+.nav-tabs.nav-justified {
+  width: 100%;
+  border-bottom: 0;
+}
+.nav-tabs.nav-justified > li {
+  float: none;
+}
+.nav-tabs.nav-justified > li > a {
+  margin-bottom: 5px;
+  text-align: center;
+}
+.nav-tabs.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
+@media (min-width: 768px) {
+  .nav-tabs.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+  .nav-tabs.nav-justified > li > a {
+    margin-bottom: 0;
+  }
+}
+.nav-tabs.nav-justified > li > a {
+  margin-right: 0;
+  border-radius: 4px;
+}
+.nav-tabs.nav-justified > .active > a,
+.nav-tabs.nav-justified > .active > a:hover,
+.nav-tabs.nav-justified > .active > a:focus {
+  border: 1px solid #ddd;
+}
+@media (min-width: 768px) {
+  .nav-tabs.nav-justified > li > a {
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+  }
+  .nav-tabs.nav-justified > .active > a,
+  .nav-tabs.nav-justified > .active > a:hover,
+  .nav-tabs.nav-justified > .active > a:focus {
+    border-bottom-color: #fff;
+  }
+}
+
+/* class="nav-tabs" ここまで */
+
+/* class="panel-group" ここから */
+
+.panel-group {
+  margin-bottom: 20px;
+}
+
+.panel-group .panel-footer {
+  border-top: 0;
+}
+.panel-group .panel-footer + .panel-collapse .panel-body {
+  border-bottom: 1px solid #ddd;
+}
+
+/* class="panel-group" ここまで */
+
+/* class="panel" ここから */
+
+.panel {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.panel-group .panel {
+  margin-bottom: 0;
+  border-radius: 4px;
+}
+.panel-group .panel + .panel {
+  margin-top: 5px;
+}
+
+/* class="panel" ここまで */
+
+/* class="panel-default" ここから */
+
+.panel-default {
+  border-color: #ddd;
+}
+
+.panel-default > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #ddd;
+}
+
+/* class="panel-default" ここまで */
+
+/* class="panel-heading" ここから */
+
+.panel-heading {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.panel-heading > .dropdown .dropdown-toggle {
+  color: inherit;
+}
+
+.panel > .panel-heading + .panel-collapse > .list-group .list-group-item:first-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.panel-heading + .list-group .list-group-item:first-child {
+  border-top-width: 0;
+}
+
+.panel-group .panel-heading {
+  border-bottom: 0;
+}
+.panel-group .panel-heading + .panel-collapse > .panel-body,
+.panel-group .panel-heading + .panel-collapse > .list-group {
+  border-top: 1px solid #ddd;
+}
+
+.panel-default > .panel-heading {
+  color: #333;
+  background-color: #f5f5f5;
+  border-color: #ddd;
+}
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #ddd;
+}
+.panel-default > .panel-heading .badge {
+  color: #f5f5f5;
+  background-color: #333;
+}
+
+/* class="panel-heading" ここまで */
+
+/* class="panel-title" ここから */
+
+.panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: inherit;
+}
+.panel-title > a,
+.panel-title > small,
+.panel-title > .small,
+.panel-title > small > a,
+.panel-title > .small > a {
+  color: inherit;
+}
+
+/* class="panel-title" ここまで */
+
+/* class="panel-collapse" ここから */
+
+.panel > .panel-collapse > .list-group {
+  margin-bottom: 0;
+}
+
+.panel > .panel-collapse > .list-group .list-group-item {
+  border-width: 1px 0;
+  border-radius: 0;
+}
+
+.panel > .panel-collapse > .list-group:first-child .list-group-item:first-child {
+  border-top: 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.panel > .panel-collapse > .list-group:last-child .list-group-item:last-child {
+  border-bottom: 0;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.panel > .panel-heading + .panel-collapse > .list-group .list-group-item:first-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.panel > .panel-collapse > .table {
+  margin-bottom: 0;
+}
+
+.panel > .panel-collapse > .table caption {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* class="panel-collapse" ここまで */
+
+/* class="collapse in" ここから */
+
+.collapse {
+  display: none;
+}
+.collapse.in {
+  display: block;
+}
+tr.collapse.in {
+  display: table-row;
+}
+tbody.collapse.in {
+  display: table-row-group;
+}
+
+/* class="collapse in" ここまで */
+
+/* class="panel-body" ここから */
+
+.panel-body {
+  padding: 15px;
+}
+
+.panel > .panel-body + .table,
+.panel > .panel-body + .table-responsive,
+.panel > .table + .panel-body,
+.panel > .table-responsive + .panel-body {
+  border-top: 1px solid #ddd;
+}
+
+.panel-group .panel-heading + .panel-collapse > .panel-body {
+  border-top: 1px solid #ddd;
+}
+
+.panel-group .panel-footer + .panel-collapse .panel-body {
+  border-bottom: 1px solid #ddd;
+}
+
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #ddd;
+}
+
+.panel-default > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #ddd;
+}
+
+.panel-body:before,
+.panel-body:after {
+  display: table;
+  content: " ";
+}
+
+/* class="panel-body" ここまで */
+
+/* class="pagination" ここから */
+
+.pagination {
+  display: inline-block;
+  padding-left: 0;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+.pagination > li {
+  display: inline;
+}
+.pagination > li > a,
+.pagination > li > span {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: #337ab7;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+  margin-left: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  z-index: 2;
+  color: #23527c;
+  background-color: #eee;
+  border-color: #ddd;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  z-index: 3;
+  color: #fff;
+  cursor: default;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+.pagination > .disabled > span,
+.pagination > .disabled > span:hover,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > a,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > a:focus {
+  color: #777;
+  cursor: not-allowed;
+  background-color: #fff;
+  border-color: #ddd;
+}
+.pagination-lg > li > a,
+.pagination-lg > li > span {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+}
+.pagination-lg > li:first-child > a,
+.pagination-lg > li:first-child > span {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.pagination-lg > li:last-child > a,
+.pagination-lg > li:last-child > span {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.pagination-sm > li > a,
+.pagination-sm > li > span {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.pagination-sm > li:first-child > a,
+.pagination-sm > li:first-child > span {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.pagination-sm > li:last-child > a,
+.pagination-sm > li:last-child > span {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+/* class="pagination" ここまで */
+
+/* class="pager" ここから */
+
+.pager {
+  padding-left: 0;
+  margin: 20px 0;
+  text-align: center;
+  list-style: none;
+}
+.pager li {
+  display: inline;
+}
+.pager li > a,
+.pager li > span {
+  display: inline-block;
+  padding: 5px 14px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+}
+.pager li > a:hover,
+.pager li > a:focus {
+  text-decoration: none;
+  background-color: #eee;
+}
+.pager .next > a,
+.pager .next > span {
+  float: right;
+}
+.pager .previous > a,
+.pager .previous > span {
+  float: left;
+}
+.pager .disabled > a,
+.pager .disabled > a:hover,
+.pager .disabled > a:focus,
+.pager .disabled > span {
+  color: #777;
+  cursor: not-allowed;
+  background-color: #fff;
+}
+
+/* class="pager" ここまで */
+
+/* class="breadcrumb" ここから */
+
+.breadcrumb {
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+.breadcrumb > li {
+  display: inline-block;
+}
+.breadcrumb > li + li:before {
+  padding: 0 5px;
+  color: #ccc;
+  content: "/\00a0";
+}
+.breadcrumb > .active {
+  color: #777;
+}
+
+/* class="breadcrumb" ここまで */
+
+/* class="" ここから */
+/* class="" ここまで */

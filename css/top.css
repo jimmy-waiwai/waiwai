@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Boogaloo|Cookie|Courgette|Handlee|Kalam|Kaushan+Script|Oleo+Script|Permanent+Marker|Sacramento');
+
+#waiwai {
+	background-color: #fff;
+	font-family: 'Lato', "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	/*font-family: Lato, "游明朝 Medium", "游明朝体", "Yu Mincho Medium", YuMincho, "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "ＭＳ 明朝", serif;*/
+}
+
+/* 	title01 ここから */
+
+#waiwai #title01 h1{
+	/*font-family: 'Kaushan Script', cursive;*/
+	/*font-family: 'Courgette', cursive;*/
+	/*font-family: 'Permanent Marker', cursive;*/
+	/*font-family: 'Handlee', cursive;*/
+	/*font-family: 'Cookie', cursive;*/
+	font-family: 'Kalam', cursive;
+	/*font-family: 'Boogaloo', cursive;*/
+	/*font-family: 'Oleo Script', cursive;*/
+	/*font-family: 'Sacramento', cursive;*/
+	font-size: 50px;
+	color: #000000;
+	text-shadow: 2px 2px 5px #999;
+	margin-top: 100px;
+	margin-bottom: 20px;
+}
+
+/* 	title01 ここまで */
+
+/* 	menu01 ここまで */
+
+#waiwai #menu01 .col-sm-4{
+	margin-top: 20px;
+	margin-bottom: 80px;
+}
+
+#waiwai #menu01 h2{
+	position: relative;
+}
+
+#waiwai #menu01 .icon01{
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+}
+
+#waiwai #menu01 .menu02{
+	font-size: 18px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+
+#waiwai #menu01 p{
+	font-size: 13px;
+	color: #000000;
+	text-decoration: none;
+}
+
+/* 	menu01 ここまで */
+
+/* 	footer01 ここから */
+
+#waiwai #footer01{
+	margin-top: 20px;
+	margin-bottom: 80px;
+}
+
+/* 	footer01 ここまで */
+
+

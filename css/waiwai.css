@@ -1,0 +1,419 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+
+#waiwai {
+	background-color: #fff;
+	font-family: 'Lato', "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	/*font-family: Lato, "游明朝 Medium", "游明朝体", "Yu Mincho Medium", YuMincho, "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "ＭＳ 明朝", serif;*/
+}
+
+/* ヘッダー ここから */
+
+#waiwai #topfixnav01 .navbar-brand {
+	font-family: 'Great Vibes', cursive;
+	font-size: 27px;
+	padding: 20px 10px 10px 20px;
+	color: #000033;
+	height: 50px;
+}
+
+#waiwai #topfixnav01 .navbar-brand:hover {
+	opacity: 0.6;
+}
+
+#waiwai #topfixnav01 .navbar-default {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+@media (min-width: 768px) {
+ #waiwai #topfixnav01 .nosmlg {
+	  display: none;
+  }
+}
+
+/* ヘッダーここまで */
+
+/* カルーセル ここから */
+
+#waiwai #carousel1 {
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+#waiwai .carousel-indicators {
+  bottom: -40px;
+}
+
+@media screen and (min-width: 768px) {
+  #waiwai .carousel-indicators {
+    bottom: -40px;
+  }
+}
+
+#waiwai .carousel-indicators li {
+	border: 1px solid #999;
+	width: 12px;
+	height: 12px;
+	margin: 3px;
+	border-radius: 12px;
+}
+
+#waiwai .carousel-indicators .active {
+  background-color: #999;
+}
+
+#waiwai .carousel-control.left {
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+  background-image:         linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+#waiwai .carousel-control.right {
+  right: 0;
+  left: auto;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+  background-image:         linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+#waiwai .carousel-control {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0);
+}
+
+/* カルーセル ここまで */
+
+/* バックイメージ固定 ここから */
+
+#waiwai #backimage01 {
+	background-image: url(../kari/bootstrap/images/newyork/newyork038.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 90%;
+	background-attachment: fixed;
+	padding: 0px;
+}
+
+#waiwai #backimage02 {
+	background-color:rgba(255,255,255,0.50);
+}
+
+#waiwai #backimage03 {
+	background-color: rgba(0,0,51,0.70);
+}
+
+/* バックイメージ固定 ここまで */
+
+/* トップメニュー ここから */
+
+#waiwai #topmenu02 {
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+@media screen and (max-width: 767px) {
+  #waiwai #topmenu02 {
+    display: none;
+  }
+}
+
+#waiwai #topmenu02 .panel-group .panel + .panel {
+	margin-top: 0px;
+}
+
+#waiwai #topmenu02 .panel-title {
+	font-size: 14px;
+	text-align: center;
+}
+#waiwai #topmenu02 .panel-default > .panel-heading {
+    color: #000066;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#waiwai #topmenu02 .panel-default {
+    border-color: rgba(225,225,225,0.50);
+}
+
+#waiwai #topmenu02 .panel {
+    background-color: rgba(225,225,225,0.50);
+    border: 1px solid #666699;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+#waiwai #topmenu02 .panel:hover {
+    background-color: rgba(225,225,225,0.70);
+}
+
+#waiwai #topmenu02 .panel a:hover,
+#waiwai #topmenu02 .panel a:visited,
+#waiwai #topmenu02 .panel a:focus{
+	text-decoration: none;
+}
+
+#waiwai #topmenu02 .panel-group .panel-heading + .panel-collapse > .panel-body {
+    border-top: 1px dotted #666699;
+}
+
+#waiwai #topmenu02 .panel-body {
+    padding: 10px 5px 13px 5px;
+	font-size: 13px;
+}
+
+
+
+/* トップメニュー ここまで */
+
+/* ニュースタブ ここから */
+
+#waiwai #newstab01 {
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+#waiwai #newstab01 .nav-tabs > li > a,
+#waiwai #newstab01 .nav-tabs > li > a:hover,
+#waiwai #newstab01 .nav-tabs > li > a:focus {
+  color: #9999cc;
+  background-color: rgba(225,225,225,0.70);
+  border: 1px solid #9999cc;
+}
+
+#waiwai #newstab01 .nav-tabs > li.active > a,
+#waiwai #newstab01 .nav-tabs > li.active > a:hover,
+#waiwai #newstab01 .nav-tabs > li.active > a:focus {
+  color: #000066;
+  background-color: #fff;
+  border: 1px solid #9999cc;
+}
+
+@media (min-width: 768px) {
+  #waiwai #newstab01 .nav-tabs.nav-justified > .active > a,
+  #waiwai #newstab01 .nav-tabs.nav-justified > .active > a:hover,
+  #waiwai #newstab01 .nav-tabs.nav-justified > .active > a:focus {
+    border-bottom-color: #fff;
+  }
+}
+
+#waiwai #newstab01 .list-group-item { 
+  background-color: #fff;
+  border: 1px solid #9999cc;
+}
+
+#waiwai #newstab01 .list-group-item:first-child {
+	border-top: none;
+	border-bottom: 1px solid #9999cc;
+	border-left: 1px solid #9999cc;
+	border-right: 1px solid #9999cc;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+#waiwai #newstab01 .label {
+	margin-right: 20px;
+}
+
+/* ニュースタブ  ここまで */
+
+/* 3コラムここから */
+
+#waiwai #column01 {
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+#waiwai #column01 .caption {
+	padding: 0px 5px 0px 10px;
+}
+
+#waiwai #column01 .caption h3 a {
+	font-size: 14pt;
+	font-weight: bold;
+	margin-bottom: 13px;
+	color: #000033;
+}
+
+#waiwai #column01 .caption p {
+	font-size: 10pt;
+	line-height: 170%;
+	color: #000033;
+}
+
+#waiwai #column01 .caption .text-right a {
+	font-size: 9pt;
+	color: #000033;
+}
+
+#waiwai #column01 .caption .text-right a:before {
+	content: "\f101";
+	font-family: FontAwesome;
+	padding-right: 8px;
+	}
+
+/* 3コラム  ここまで */
+
+/* カードレイアウト  ここまで */
+
+#waiwai #cardlayout01 {
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+#waiwai #cardlayout01 .card01,
+#waiwai #cardlayout01 .card02,
+#waiwai #cardlayout01 .card03,
+#waiwai #cardlayout01 .card04,
+#waiwai #cardlayout01 .card05,
+#waiwai #cardlayout01 .card06,
+#waiwai #cardlayout01 .card07,
+#waiwai #cardlayout01 .card08{
+	margin-bottom: 30px;
+}
+
+#waiwai #cardlayout01 .cardback {
+	background-color: rgba(0,0,102,0.60);
+	padding: 10px 15px 2px 20px;
+}
+
+#waiwai #cardlayout01 .padding0 {
+	padding: 0px;
+}
+
+#waiwai #cardlayout01 .card01 .cardback {
+	height: 155px;
+}
+
+#waiwai #cardlayout01 .card02 .cardback {
+	height: 213px;
+}
+
+#waiwai #cardlayout01 .card03 img,
+#waiwai #cardlayout01 .card03 .cardback,
+#waiwai #cardlayout01 .card04 img,
+#waiwai #cardlayout01 .card04 .cardback {
+	height: 160px;
+}
+
+#waiwai #cardlayout01 .card05 img,
+#waiwai #cardlayout01 .card05 .cardback {
+	height: 150px;
+}
+
+#waiwai #cardlayout01 .card06 img,
+#waiwai #cardlayout01 .card06 .cardback {
+	height: 160px;
+}
+
+#waiwai #cardlayout01 .card07 .cardback {
+	height: 153px;
+}
+
+#waiwai #cardlayout01 .cardimg01 {
+	width: 100px;
+	height: 150px;
+	overflow: hidden;
+	float: left;
+    margin-right: 20px;
+}
+
+#waiwai #cardlayout01 .cardcopy {
+	overflow: hidden;
+}
+
+#waiwai #cardlayout01 .cardcopy h6 {
+	color: #fff;
+	font-size: 15px;
+}
+
+#waiwai #cardlayout01 .cardcopy p {
+	color: #fff;
+	font-size: 11px;
+	line-height: 150%;
+}
+
+#waiwai #cardlayout01 .cardya {
+	position: absolute;
+	bottom: 0;
+	right: 30px;
+}
+
+#waiwai #cardlayout01 .cardya p {
+	color: #fff;
+	font-size: 15px;
+}
+
+#waiwai #cardlayout01 .cardya p:after {
+	content: "\f138";
+	font-family: FontAwesome;
+	}
+
+
+/* カードレイアウト  ここまで */
+
+/* 動画 ここから */
+
+#waiwai #youtube01 {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+#waiwai #youtube01 .col-md-3 {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+/* 動画 ここまで */
+
+/* サイトマップ ここから */
+
+#waiwai #sitemap01 {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+#waiwai #sitemap01 ul {
+	padding-left: 5px;
+}
+
+#waiwai #sitemap01 li {
+	list-style: none;
+}
+
+#waiwai #sitemap01 h5,
+#waiwai #sitemap01 li a {
+	color: #fff;
+	}
+
+#waiwai #sitemap01 li a:before {
+	content: "\f0da";
+	font-family: FontAwesome;
+	padding-right: 8px;
+	}
+
+/* サイトマップ ここまで */
+
+/* フッターここから */
+
+#waiwai #bottomfixnav01 {
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+#waiwai #bottomfixnav01 .navbar-default {
+    background-color: #fff;
+    border-color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+	#waiwai #bottomfixnav01 .navbar {
+    border-radius: 4px;
+	}
+}
+
+/* フッター ここまで */
