@@ -1,0 +1,30 @@
+body {
+	background: #FFFFFF url(backg52.gif);
+	color: #333366;
+	font-size: 12px;
+	line-height: 150%;
+}
+a:link {
+	text-decoration: underline;
+	color: #996699;
+}
+a:visited {
+	text-decoration: underline;
+	color: #996699;
+}
+a:hover {
+	text-decoration: underline;
+	color: #CC99FF;
+}
+.komidasi {
+	color: #996699;
+	font-size: 14px;
+	font-weight: bold;
+}
+.hizuke {
+	color: #996699;
+	text-align: right;
+}
+.komento {
+	color: #996699;
+}
