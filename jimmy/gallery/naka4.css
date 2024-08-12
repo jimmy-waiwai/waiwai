@@ -1,0 +1,30 @@
+body {
+	background: #E6ECF4 url(backg4.gif);
+	color: #666699;
+	font-size: 12px;
+	line-height: 150%;
+}
+a:link {
+	text-decoration: underline;
+	color: #6699CC;
+}
+a:visited {
+	text-decoration: underline;
+	color: #6699CC;
+}
+a:hover {
+	text-decoration: underline;
+	color: #66FFFF;
+}
+.komidasi {
+	color: #6699CC;
+	font-size: 14px;
+	font-weight: bold;
+}
+.hizuke {
+	color: #6699CC;
+	text-align: right;
+}
+.setumei {
+	vertical-align: bottom;
+}
