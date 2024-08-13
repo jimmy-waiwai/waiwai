@@ -1,0 +1,28 @@
+body,td,th {
+	font: 12px/150% "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
+	color: #663333;
+}
+body {
+	background: #FFE6DB url(backg2.gif);
+}
+a:link {
+	text-decoration: underline;
+	color: #CC6633;
+}
+a:visited {
+	text-decoration: underline;
+	color: #CC6633;
+}
+a:hover {
+	text-decoration: underline;
+	color: #FFCC00;
+}
+.komidasi {
+	color: #CC6633;
+	font-size: 14px;
+	font-weight: bold;
+}
+.hizuke {
+	color: #CC6633;
+	text-align: right;
+}
