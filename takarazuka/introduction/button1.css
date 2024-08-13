@@ -1,0 +1,23 @@
+body {
+	background: #CC6699;
+}
+a:link {
+	color: #F2DDE8;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #F2DDE8;
+}
+a:hover {
+	text-decoration: none;
+	color: #FF99FF;
+}
+.kage {
+	background: #663333;
+}
+.moji1 {
+	text-align: center;
+	vertical-align: middle;
+	font-size: 12px;
+}

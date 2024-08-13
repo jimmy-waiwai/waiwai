@@ -1,0 +1,55 @@
+body {
+	background: #D9C7CD url(backg1.gif);
+	color: #663333;
+	font-size: 12px;
+	line-height: 150%;
+}
+a:link {
+	text-decoration: underline;
+	color: #CC6699;
+}
+a:visited {
+	text-decoration: underline;
+	color: #CC6699;
+}
+a:hover {
+	text-decoration: underline;
+	color: #FF99FF;
+}
+.komidasi {
+	color: #CC6699;
+	font-size: 14px;
+	font-weight: bold;
+}
+.hizuke {
+	color: #CC6699;
+	text-align: right;
+}
+.waku1 {
+	font-weight: bold;
+	color: #F2DDE8;
+	background: #CC6699;
+	text-align: center;
+	padding: 3px;
+}
+.waku2 {
+	font-weight: bold;
+	color: #663333;
+	background: #F8E6F3;
+	text-align: center;
+	padding: 3px;
+}
+.waku3 {
+	background: #F8E6F3;
+	padding: 3px;
+}
+.waku4 {
+	background: #F8E6F3;
+	padding: 3px;
+}
+.waku5 {
+	background: #FAEEF8;
+	color: #CC6699;
+	text-align: right;
+	padding: 3px;
+}
