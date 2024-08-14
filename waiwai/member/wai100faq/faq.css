@@ -1,0 +1,48 @@
+.bangou {
+	font-weight: bold;
+	color: #CC33CC;
+	text-align: center;
+	background: #F0E1FF;
+	padding: 3px;
+}
+.situmon {
+	background: #FFFFFF;
+	padding: 3px;
+}
+.bangou2 {
+	text-align: center;
+	font-weight: bold;
+	color: #9966CC;
+	background: #FFFFFF;
+	padding: 3px;
+}
+.kotae {
+	text-align: right;
+	color: #9966CC;
+	background: #FFFFFF;
+	padding: 3px;
+}
+.itiretume {
+	background: #F0E1FF;
+	padding: 3px;
+}
+.niretume {
+	background: #F5EBFF;
+	padding: 3px;
+}
+.sanretume {
+	background: #FAF5FF;
+	padding: 3px;
+}
+.style1 {
+	background: #E1C3FF;
+	padding: 3px;
+}
+.style2 {
+	background: #EBD7FF;
+	padding: 3px;
+}
+.style3 {
+	background: #F5EBFF;
+	padding: 3px;
+}
