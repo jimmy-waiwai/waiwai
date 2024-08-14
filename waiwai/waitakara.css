@@ -1,0 +1,119 @@
+body,td,th {
+	color: #666666;
+	font: 12px "‚l‚r ‚oƒSƒVƒbƒN", Osaka, "ƒqƒ‰ƒMƒmŠpƒS Pro W3";
+	text-decoration: none;
+}
+
+body {
+	background: #FFFFFF url("images/back0208.gif");
+	margin-left: 0px;
+	margin-top: 5px;
+	line-height: 150%;
+}
+
+a:link {
+	color: #9966CC;
+}
+a:visited {
+	color: #9966CC;
+}
+a:hover {
+	text-decoration: underline;
+	color: #99CC33;
+}
+
+h1#toptitle {
+	font-size: 12px;
+	line-height: 1em;
+	color: #9966CC;
+	font-weight: normal;
+}
+
+a.menu:link {
+	color: #666666;
+	text-decoration: none;
+	font-size: 10px;
+}
+a.menu:visited {
+	text-decoration: none;
+	color: #666666;
+	font-size: 10px;
+}
+a.menu:hover {
+	text-decoration: underline;
+	color: #666666;
+	font-size: 10px;
+}
+
+.topseito {
+	font-size: 12px;
+	text-align: left;
+	padding: 5px;
+	color: #CC00CC;
+}
+
+.topkouen {
+	text-align: left;
+	padding: 20px;
+	background: #FFFFFF;
+}
+
+a.mokuji2:link {
+	color: #999999;
+	text-decoration: none;
+}
+a.mokuji2:visited {
+	text-decoration: none;
+	color: #666666;
+}
+a.mokuji2:hover {
+	text-decoration: underline;
+	color: #666666;
+}
+
+.komoji {
+	font-size: 10px;
+}
+
+.red {
+	color: #FF0000;
+}
+
+.kouen {
+	font-size: 12px;
+	background: #FFFFFF;
+	text-align: center;
+}
+
+a.mokuji:link {
+	color: #999999;
+	text-decoration: none;
+}
+a.mokuji:visited {
+	text-decoration: none;
+	color: #999999;
+}
+a.mokuji:hover {
+	text-decoration: none;
+	color: #666666;
+}
+
+.uptime {
+	font-size: 10px;
+	text-align: center;
+}
+
+.kage {
+	background: #999999;
+}
+
+.nensu {
+	font-size: 10px;
+	color: #666666;
+	text-align: center;
+}
+
+.komidasi {
+	font-size: 12px;
+	color: #9966CC;
+}
