@@ -3,16 +3,16 @@ Theme Name: twentyfourteen_jimmy
 Theme URI: http://waiwai.ciao.jp/takarazukawp/
 Author: JIMMY
 Author URI: http://waiwai.ciao.jp/designwp/
-Description: Twenty Fourteen ‚Ìqƒe[ƒ}‚Å‚·B
+Description: Twenty Fourteen ï¿½Ìqï¿½eï¿½[ï¿½}ï¿½Å‚ï¿½ï¿½B
 Template: twentyfourteen
 Version: 1.5
 */
 
-/* eƒe[ƒ}‚ÌƒXƒ^ƒCƒ‹ƒV[ƒg‚ğ“Ç‚İ‚Ş */
+/* ï¿½eï¿½eï¿½[ï¿½}ï¿½ÌƒXï¿½^ï¿½Cï¿½ï¿½ï¿½Vï¿½[ï¿½gï¿½ï¿½Ç‚İï¿½ï¿½ï¿½ */
 
 @import url("../twentyfourteen/style.css");
 
-/* ƒtƒHƒ“ƒg‚ğ“Ç‚İ‚Ş */
+/* ï¿½tï¿½Hï¿½ï¿½ï¿½gï¿½ï¿½Ç‚İï¿½ï¿½ï¿½ */
 
 /* @font-face {
 font-family: "Jiyucho";
@@ -117,7 +117,7 @@ input,
 select,
 textarea {
 	color: #663333;
-	font-family: "ŸàƒSƒVƒbƒN‘Ì", "Yu Gothic", YuGothic, "ƒqƒ‰ƒMƒmŠpƒSƒVƒbƒN Pro", "Hiragino Kaku Gothic Pro", 'ƒƒCƒŠƒI' , Meiryo , Osaka, "‚l‚r ‚oƒSƒVƒbƒN", "MS PGothic", sans-serif;
+	font-family: "ï¿½ï¿½ï¿½Sï¿½Vï¿½bï¿½Nï¿½ï¿½", "Yu Gothic", YuGothic, "ï¿½qï¿½ï¿½ï¿½Mï¿½mï¿½pï¿½Sï¿½Vï¿½bï¿½N Pro", "Hiragino Kaku Gothic Pro", 'ï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½I' , Meiryo , Osaka, "ï¿½lï¿½r ï¿½oï¿½Sï¿½Vï¿½bï¿½N", "MS PGothic", sans-serif;
 	font-size: 16px;
 	font-weight: normal;
 	line-height: 1.7;
@@ -3749,8 +3749,6 @@ a.post-thumbnail:hover {
 		background-color: transparent;
 		content: "";
 		display: block;
-		height: 100%;
-		min-height: 100%;
 		position: absolute;
 		top: 0;
 		left: 0;
