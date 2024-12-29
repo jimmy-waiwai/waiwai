@@ -127,6 +127,7 @@ body {
 	background: #ffcccc url(images/back.jpg) left repeat-x fixed;
 	/*background: #ffffff url(images/back2.jpg) right top no-repeat fixed;*/
 	/*background: #ffffff url(images/back3.jpg) left no-repeat fixed;*/
+	background-size: cover;
 }
 
 a {
