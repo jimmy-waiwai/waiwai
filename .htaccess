@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule ^takarazukawp(.*)$ /takarazuka$1 [R=301,L]
+RewriteRule ^takarazuka(.*)$ /jimmy$1 [R=301,L]
+RewriteRule ^designwp(.*)$ /design$1 [R=301,L]
+RewriteRule ^everydaywp(.*)$ /everyday$1 [R=301,L]
