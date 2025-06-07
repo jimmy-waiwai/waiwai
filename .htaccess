@@ -1,4 +1,4 @@
 RewriteEngine on
-RewriteRule ^takarazukawp(.*)$ /takarazuka/ [R=301,L]
-RewriteRule ^designwp(.*)$ /design/ [R=301,L]
-RewriteRule ^everydaywp(.*)$ /everyday/ [R=301,L]
+RewriteRule ^takarazuka(.*)$ /takarazuka/ [R=301,L]
+RewriteRule ^design(.*)$ /design/ [R=301,L]
+RewriteRule ^everyday(.*)$ /everyday/ [R=301,L]
