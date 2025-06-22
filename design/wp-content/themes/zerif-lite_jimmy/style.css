@@ -1838,6 +1838,7 @@ ul.nav > li.current_page_item.current > a:before {
 -----------------------------------------*/
 .focus-box .service-icon .pixeden  {
 	border-radius: 50%;
+	display: block;
 }
 .focus {
 	padding-bottom: 100px;
@@ -1858,6 +1859,7 @@ ul.nav > li.current_page_item.current > a:before {
 /* FOCUS BOX */
 .focus-box .service-icon {
 	margin-bottom: 30px;
+	display: block;
 	width: 145px;
 	height: 145px;
 	margin: auto;
