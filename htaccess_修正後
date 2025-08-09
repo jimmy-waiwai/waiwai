@@ -1,0 +1,18 @@
+RewriteEngine on
+RewriteRule ^takarazuka(.*)$ /takarazuka [R=301,L]
+RewriteRule ^design(.*)$ /design [R=301,L]
+RewriteRule ^everyday(.*)$ /everyday [R=301,L]
+
+
+**************************************
+
+RewriteRule ^takarazuka/2018(.*)$ /bbb [L,R=301]
+
+skystage
+https://jimmy-waiwai.github.io/waiwai/takarazuka/2018/03/04/genji/
+https://jimmy-waiwai.github.io/waiwai/takarazuka/2017/10/29/1789/
+s1789
+
+review_blog
+https://jimmy-waiwai.github.io/waiwai/takarazuka/2009/07/12/post_71/
+https://jimmy-waiwai.github.io/waiwai/takarazuka/2009/07/11/post_63/

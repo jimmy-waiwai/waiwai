@@ -1,0 +1,1 @@
+import{l as s,c as a,t as r,P as t,o as l}from"./DxnKXHuR.js";const c={__name:"user-[id]",setup(n){const o=s();return console.log(o.params.id),(e,p)=>(l(),a("p",null,"ユーザID: "+r((e._.provides[t]||e.$route).params.id),1))}};export{c as default};

@@ -1,0 +1,1 @@
+import{_ as s,c as t,o as n,a as r,S as a}from"./DxnKXHuR.js";const l={};function c(o,e){return n(),t("div",null,[e[0]||(e[0]=r("nav",null,"カスタムレイアウト",-1)),a(o.$slots,"default")])}const f=s(l,[["render",c]]);export{f as default};

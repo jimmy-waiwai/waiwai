@@ -1,0 +1,1 @@
+import{_ as o,c as r,a as s,t,P as n,F as l,o as _}from"./DxnKXHuR.js";const u={};function c(e,a){return _(),r(l,null,[a[0]||(a[0]=s("h1",null,"Dashboard",-1)),s("p",null,t((e._.provides[n]||e.$route).params.slug),1)],64)}const m=o(u,[["render",c]]);export{m as default};
