@@ -1,5 +1,0 @@
-AuthUserFile /home/sites/lolipop.jp/users/ciao.jp-waiwai/web/waiwai/member/itiran/.htpasswd
-AuthGroupFile /dev/null
-AuthName "Member\'s List"
-AuthType Basic
-require valid-user

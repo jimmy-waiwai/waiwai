@@ -1,1 +1,0 @@
-import{_ as o,c as s,a as t,b as r,o as a,f as c}from"./CgMl-Sip.js";const _={};function l(u,e){const n=c;return a(),s("div",null,[e[0]||(e[0]=t("h1",null,"Usersページ",-1)),r(n)])}const d=o(_,[["render",l]]);export{d as default};

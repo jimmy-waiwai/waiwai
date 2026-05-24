@@ -1,4 +1,0 @@
-RewriteEngine on
-RewriteRule ^takarazuka(.*)$ /takarazuka [R=301,L]
-RewriteRule ^design(.*)$ /design [R=301,L]
-RewriteRule ^everyday(.*)$ /everyday [R=301,L]
