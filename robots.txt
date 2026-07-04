@@ -1,2 +1,3 @@
 User-Agent: *
 Disallow:
+Sitemap: https://jimmy-waiwai.github.io/waiwai/sitemap.xml
